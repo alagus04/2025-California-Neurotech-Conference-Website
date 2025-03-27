@@ -2,88 +2,101 @@
 
 import React from 'react';
 import Image from 'next/image';
-import Carousel from '../../../components/Carousel';
-import about_1 from '../../../public/about_1.jpeg';
-import guest_speaker from '../../../public/about_1.jpeg';
-import industry_academic_panels from '../../../public/about_2.jpg';
-import panel from '../../../public/panel.png';
-import research_poster from '../../../public/research_poster.png';
-import bci_competition from '../../../public/bci_competition.jpg';
+import Link from 'next/link';
+
+const Organizers = [
+  {
+    name: "Pranav Sakhuja",
+    image: "/Pranav Sakhuja.jpeg",
+    linkedin: "https://www.linkedin.com/in/pranavsakhuja/"
+  },
+  {
+    name: "Kelly Peng",
+    image: "/Kelly Peng.jpg",
+    linkedin: "https://www.linkedin.com/in/kelly-x-peng/"
+  },
+  {
+    name: "Jeevan Karandikar",
+    image: "/Jeevan Karandikar.jpg",
+    linkedin:"https://www.linkedin.com/in/jeevankarandikar/"
+  },
+  {
+    name: "Sadhana Jeyakumar",
+    image: "/Sadhana_Jeyakumar.jpg",
+    linkedin: "https://www.linkedin.com/in/sadhana-jeyakumar/",
+  },
+  {
+    name: "Siya Jatia",
+    image: "/Siya Jatia.jpg",
+    linkedin: "https://www.linkedin.com/in/siya-jatia-7952381b5/"
+  },
+  {
+    name: "Hazel Huang",
+    image: "/Hazel Huang.jpg",
+    linkedin: "https://www.linkedin.com/in/hazel-huang-5453b6326/"
+  },
+  {
+    name: "Anisha Narurkar",
+    image: "/Anisha Narurkar.jpeg",
+    linkedin: "https://www.linkedin.com/in/anisha-narurkar-81b178261/"
+  },
+  {
+    name: "Sanvi Verma",
+    image: "/Sanvi Verma.jpg",
+    linkedin: "https://www.linkedin.com/in/sanvi-verma/"
+  },
+  {
+    name: "Alagappan Sellappan",
+    image: "/Alagappan Sellappan.png",
+    linkedin: "https://www.linkedin.com/in/alsellappan/"
+  }
+];
 
 export default function About() {
   return (
-    <main>
-      <div className="md:p-10 md:py-44 py-32">
-
+    <main className="min-h-screen flex flex-col items-center justify-center bg-white">
+      <div className="relative flex flex-center">
         {/* Our Mission Section */}
-        <div className="md:flex flex-row p-10 md:justify-between items-center bg-gray-200 bg-opacity-50 rounded-3xl shadow-lg p-6 mx-6 md:mx-20">
-          <div className='w-2/7'>
-            <Image
-              src={about_1}
-              width={400}
-              height={400}
-              alt="Logo"
-              className="h-auto w-auto shadow-2xl rounded-lg"
-            />
-          </div>
-          <div className='w-3/4 pl-10 py-10 md:py-0'>
-            <h1 className="text-4xl pb-4">Our Mission</h1>
-            <p className="text-lg text-justify mb-4">
-              Welcome to the 2025 California Neurotechnology Conference, a distinguished symposium dedicated to advancing neurotechnology research and collaboration. 
-              Hosted at UC San Diego, this event engages students, researchers, and professionals in an academic setting that encourages analytical thinking and innovative solutions. 
-              Our mission is to cultivate a dynamic community of academic scholars and industry experts, dedicated to advancing neurotechnology and driving impactful conversations about the future of the field.
-            </p>
-            <p className="text-lg text-justify mb-4">
-              Join us for an enriching academic experience emphasizing research excellence, collaborative inquiry, and the innovative spirit driving the future of neurotechnology.
-              Whether you are seeking to present your work, network with peers and experts, or deepen your knowledge of the field, the 2025 California Neurotechnology Conference is the ideal forum to ignite collaboration and shape the evolving landscape of neurotechnology research.
-            </p>
-          </div>
+        <Image
+          src="/About.jpg"
+          width={2000}
+          height={1000}
+          alt="Logo"
+          className="object-cover sm:h-[60vh] md:h-2/3 h-[70vh] w-full" // Set dynamic height based on viewport size
+    />
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
+          <h1 className="mt-40 md:mt-32 text-4xl md:text-7xl font-bold leading-loose text-center px-4">About Us</h1>
+          <p className="mt-4 md:mt-20 text-xl md:text-4xl text-center w-[80%] md:w-[60%] px-4">
+            Established in 2023, CNTC is California's Only Student-Run Annual Neurotechnology Conference.
+          </p>
         </div>
+      </div>
 
-        {/* Horizontal Line Separator */}
-        <hr className="border-t-2 border-gray-400 border-opacity-50 w-3/4 mx-auto my-10" />
-
-        {/* Event Components Section */}
-        <div className="text-center py-10">
-          <h1 className="text-4xl font-bold">Event Components</h1>
-        </div>
-
-        {/* Single Row for Event Components */}
-        <div className="flex flex-wrap justify-between items-stretch gap-6 mx-6 md:mx-20">
-          {[
-            { img: panel, title: "Distinguished Guest Speakers", desc: "Benefit from presentations by leading academics who will share detailed insights into their current research projects and the latest developments in neurotechnology." },
-            { img: guest_speaker, title: "Interactive Q&A Sessions", desc: "Engage in structured discussions that bridge the gap between theoretical research and practical applications, offering participants a comprehensive view of current challenges in neurotechnology." },
-            { img: industry_academic_panels, title: "Hands-on Workshops", desc: "Enhance practical skills through workshop sessions led by seasoned experts, offering the opportunity to explore innovative research methodologies and learn state-of-the-art techniques." },
-            { img: bci_competition, title: "Competitive Presentations and BCI Competition", desc: "Participate in showcases where student clubs and research teams showcase their innovative projects, including a dedicated Brain-Computer Interface (BCI) competition judged by esteemed academic and industry judges." },
-            { img: research_poster, title: "Research Poster Sessions", desc: "Explore poster sessions where students present their latest findings, showcasing research across various disciplines." },
-          ].map((item, index) => (
-            <div key={index} className="bg-gray-200 bg-opacity-50 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center w-full md:w-1/6 lg:w-1/6">
-              <Image
-                src={item.img}
-                width={120}
-                height={120}
-                alt={item.title}
-                className="h-32 w-32 object-cover rounded-lg shadow-md"
-              />
-              <h2 className="text-xl font-semibold mt-4">{item.title}</h2>
-              <p className="text-sm text-center mt-2">{item.desc}</p>
-            </div>
+      {/* Organizers Section */}
+      <div className="bg-[#f4f4f4] py-16">
+        <h1 className="text-left ml-8 md:ml-56 text-4xl md:text-6xl font-bold mb-10">Our Team</h1>
+        {/* Flex container */}
+        <div className="mt-20 flex flex-wrap justify-center gap-8 px-8">
+          {Organizers.map((organizer, index) => (
+            <Link
+              key={index}
+              href={organizer.linkedin}
+              target="_blank"
+              className="w-full sm:w-1/2 md:w-1/4 flex flex-col items-center text-center bg-white rounded-2xl shadow-lg p-6 transition-transform hover:scale-105 cursor-pointer"
+            >
+              <div className="w-36 h-36 relative mb-4">
+                <Image
+                  src={organizer.image}
+                  alt={organizer.name}
+                  layout="fill"
+                  className="rounded-full object-cover"
+                />
+              </div>
+              <h2 className="text-lg font-semibold">{organizer.name}</h2>
+            </Link>
           ))}
         </div>
-
       </div>
-
-      {/* Speakers and Panelists Section */}
-      <div className="flex flex-row justify-center align-baseline mt-2">
-        <span className="flex font-outfit text-3xl">
-          Speakers and Panelists
-        </span>
-      </div>
-      <div className="p-8">
-        <Carousel />
-      </div>
-
-      <script async src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
     </main>
   );
 }
