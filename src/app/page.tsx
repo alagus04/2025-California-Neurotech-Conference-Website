@@ -35,7 +35,7 @@ export default function Home() {
             <div className="font-outfit text-4xl">
               Explore the&nbsp;
               <span className="font-bold font-outfit">new wave</span><br />
-              of <span className="font-bold font-outfit">Neurotechnology.</span>
+              of <span className="font-bold font-outfit">Neuroscience.</span>
               
             </div>
           </div>
