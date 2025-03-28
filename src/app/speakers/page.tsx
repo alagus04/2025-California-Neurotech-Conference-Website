@@ -10,15 +10,16 @@ export default function Speakers() {
           alt="image"
           width={2000}
           height={500}
-          className="object-cover sm:h-[60vh] md:h-2/3 h-[70vh] w-full"
+          className="object-cover sm:h-[60vh] md:h-1/2 md:-mt-32 h-[70vh] w-full"
         />
-        <div className="absolute inset-0 flex flex-col justify-start top-1/4 left-10 md:left-40  mt-40 text-white text-xl sm:text-5xl md:text-7xl font-bold leading-loose">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl ml-20 sm:mb-14">Our Speakers</h1>
+        <div className="absolute inset-0 flex flex-col justify-start max-w-2/3 top-1/4 left-10 md:left-40  mt-40 text-white text-xl sm:text-5xl md:text-7xl leading-loose">
+          <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl ml-20 sm:mb-14">Our Speakers</h1>
+          <p className=' text-3xl md:w-[60%] ml-20'>Explore the brilliant minds at CNTC, driving innovation in neurotechnology and neuroscience in academia and industry.</p>
         </div>
       </div>
 
       {/* Grid Layout for Speakers */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 sm:mt-2 mt-14 px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 sm:mt-2 md:mt-8 px-4">
         {/* Speaker 1 */}
         <div className="flex flex-col items-center text-center bg-white rounded-2xl shadow-lg p-8 w-full sm:w-72 h-[350px] md:h-[400px] transform hover:translate-y-[-5px] transition-all duration-300">
           <Image
