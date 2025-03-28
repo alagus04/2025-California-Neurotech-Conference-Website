@@ -40,7 +40,7 @@ export default function NavBar() {
 
                 {/* Desktop Navigation Links */}
                 <div className="hidden md:flex space-x-8 text-lg font-medium">
-                    {/*<NavItem href="/speakers" label="Speakers" active={path === "/speakers"} />*/}
+                    <NavItem href="/speakers" label="Speakers" active={path === "/speakers"} />
                     <NavItem href="/event" label="Event" active={path === "/event"} />
                     <NavItem href="/about" label="About Us" active={path === "/about"} />
                     <NavItem href="/sponsors" label="Sponsors" active={path === "/sponsors"} />
@@ -73,7 +73,7 @@ export default function NavBar() {
                     </div>
 
                     {/* Menu Items */}
-                    {/*<NavItem href="/speakers" label="Speakers" active={path === "/speakers"} onClick={handleNavClick} />*/}
+                    <NavItem href="/speakers" label="Speakers" active={path === "/speakers"} onClick={handleNavClick} />
                     <NavItem href="/event" label="Event" active={path === "/event"} onClick={handleNavClick} />
                     <NavItem href="/about" label="About Us" active={path === "/about"} onClick={handleNavClick} />
                     <NavItem href="/sponsors" label="Sponsors" active={path === "/sponsors"} onClick={handleNavClick} />

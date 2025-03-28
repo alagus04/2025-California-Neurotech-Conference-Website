@@ -8,10 +8,10 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 export default function Footer() {
     return (
         <>
-            <footer className="bg-blue-900">
+            <footer className="bg-[#062a74]">
                 <div className="flex flex-row justify-between x-auto w-full p-4 py-6 lg:py-8">
 
-                    <div className="flex flex-col items-start h-full">
+                    <div className="flex flex-col items-start h-full ml-5">
                         <span className="text-xs text-white">Re-designed and Developed by</span>
                         <span className="text-xs text-white">
                             <Link 
