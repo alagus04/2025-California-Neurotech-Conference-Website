@@ -12,7 +12,7 @@ export default function Speakers() {
           height={500}
           className="object-cover sm:h-[60vh] md:h-1/2 md:-mt-32 h-[70vh] w-full"
         />
-        <div className="absolute inset-0 flex flex-col justify-start max-w-2/3 top-1/4 left-10 md:left-40  mt-40 text-white text-xl sm:text-5xl md:text-7xl leading-loose">
+        <div className="absolute inset-0 flex flex-col justify-start max-w-2/3 top-1/4 left-10 md:left-40  mt-20 text-white text-xl sm:text-5xl md:text-7xl leading-loose">
           <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl ml-20 sm:mb-14">Our Speakers</h1>
           <p className=' text-3xl md:w-[60%] ml-20'>Explore the brilliant minds at CNTC, driving innovation in neurotechnology and neuroscience in academia and industry.</p>
         </div>
