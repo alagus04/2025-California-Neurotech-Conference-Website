@@ -67,7 +67,7 @@ export default function About() {
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
           <h1 className="mt-40 md:mt-32 text-4xl md:text-7xl font-bold leading-loose text-center px-4">About Us</h1>
           <p className="mt-4 md:mt-20 text-xl md:text-4xl text-center w-[80%] md:w-[60%] px-4">
-            Established in 2023, CNTC is California's Only Student-Run Annual Neurotechnology Conference.
+            Established in 2023, CNTC is California&apos;s Only Student-Run Annual Neurotechnology Conference.
           </p>
         </div>
       </div>
