@@ -27,7 +27,7 @@ const Organizers = [
   },
   {
     name: "Siya Jatia",
-    image: "/Siya Jatia.jpg",
+    image: "/Siya Jatia.JPG",
     linkedin: "https://www.linkedin.com/in/siya-jatia-7952381b5/"
   },
   {
