@@ -88,8 +88,10 @@ export default function About() {
         {/* Flex container */}
         <div className="mt-20 flex flex-wrap justify-center gap-8 px-8">
           {Organizers.map((organizer, index) => (
-            <div
+            <Link
               key={index}
+              href={organizer.linkedin || "#"} // Use "#" if no LinkedIn is available
+              target={organizer.linkedin ? "_blank" : undefined}
               className="w-full sm:w-1/2 md:w-1/4 flex flex-col items-center text-center bg-white rounded-2xl shadow-lg p-6 transition-transform hover:scale-105 cursor-pointer"
             >
               <div className="w-36 h-36 relative mb-4">
@@ -101,12 +103,7 @@ export default function About() {
                 />
               </div>
               <h2 className="text-lg font-semibold">{organizer.name}</h2>
-              {/* Conditional rendering of LinkedIn link */}
-              {organizer.linkedin ? (
-                <Link href={organizer.linkedin} target="_blank">
-                </Link>
-              ) : null}
-            </div>
+            </Link>
           ))}
         </div>
       </div>
