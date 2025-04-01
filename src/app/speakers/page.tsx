@@ -64,7 +64,7 @@ export default function Speakers() {
 
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-[#f2f6fe]">
-            <div className='opacity-90 w-full relative'>
+      <div className='opacity-90 w-full relative'>
         <Image
           src="/About.jpg"
           alt="image"

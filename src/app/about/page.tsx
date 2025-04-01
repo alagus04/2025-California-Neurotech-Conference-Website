@@ -98,7 +98,7 @@ export default function About() {
                 <Image
                   src={organizer.image}
                   alt={organizer.name}
-                  layout="fill"
+                  fill
                   className="rounded-full object-cover"
                 />
               </div>
