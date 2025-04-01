@@ -36,6 +36,11 @@ const Organizers = [
     linkedin: "https://www.linkedin.com/in/hazel-huang-5453b6326/"
   },
   {
+    name: "Anusha Madapura",
+    image: "/Anusha.jpg",
+    linkedin: "https://www.linkedin.com/in/anushamadapura/"
+  },
+  {
     name: "Anisha Narurkar",
     image: "/Anisha Narurkar.jpeg",
     linkedin: "https://www.linkedin.com/in/anisha-narurkar-81b178261/"
@@ -49,6 +54,11 @@ const Organizers = [
     name: "Alagappan Sellappan",
     image: "/Alagappan Sellappan.png",
     linkedin: "https://www.linkedin.com/in/alsellappan/"
+  },
+  {
+    name: "Adela Equihua-Sanchez",
+    image: "/Adela Equihua-Sanchez.jpeg",
+    linkedin: ""
   }
 ];
 
@@ -63,7 +73,7 @@ export default function About() {
           height={1000}
           alt="Logo"
           className="object-cover sm:h-[60vh] md:h-2/3 h-[70vh] w-full" // Set dynamic height based on viewport size
-    />
+        />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
           <h1 className="mt-40 md:mt-32 text-4xl md:text-7xl font-bold leading-loose text-center px-4">About Us</h1>
           <p className="mt-4 md:mt-20 text-xl md:text-4xl text-center w-[80%] md:w-[60%] px-4">
@@ -78,10 +88,8 @@ export default function About() {
         {/* Flex container */}
         <div className="mt-20 flex flex-wrap justify-center gap-8 px-8">
           {Organizers.map((organizer, index) => (
-            <Link
+            <div
               key={index}
-              href={organizer.linkedin}
-              target="_blank"
               className="w-full sm:w-1/2 md:w-1/4 flex flex-col items-center text-center bg-white rounded-2xl shadow-lg p-6 transition-transform hover:scale-105 cursor-pointer"
             >
               <div className="w-36 h-36 relative mb-4">
@@ -93,7 +101,12 @@ export default function About() {
                 />
               </div>
               <h2 className="text-lg font-semibold">{organizer.name}</h2>
-            </Link>
+              {/* Conditional rendering of LinkedIn link */}
+              {organizer.linkedin ? (
+                <Link href={organizer.linkedin} target="_blank">
+                </Link>
+              ) : null}
+            </div>
           ))}
         </div>
       </div>
