@@ -36,9 +36,9 @@ const Organizers = [
     linkedin: "https://www.linkedin.com/in/hazel-huang-5453b6326/"
   },
   {
-    name: "Anisha Narurkar",
-    image: "/Anisha Narurkar.jpeg",
-    linkedin: "https://www.linkedin.com/in/anisha-narurkar-81b178261/"
+    name: "Anusha Madapura",
+    image: "/Anusha.jpg",
+    linkedin: "https://www.linkedin.com/in/anushamadapura/"
   },
   {
     name: "Sanvi Verma",
@@ -51,9 +51,9 @@ const Organizers = [
     linkedin: "https://www.linkedin.com/in/alsellappan/"
   },
   {
-    name: "Anusha Madapura",
-    image: "/Anusha.jpg",
-    linkedin: "https://www.linkedin.com/in/anushamadapura/"
+    name: "Anisha Narurkar",
+    image: "/Anisha Narurkar.jpeg",
+    linkedin: "https://www.linkedin.com/in/anisha-narurkar-81b178261/"
   },
   {
     name: "Adela Equihua-Sanchez",
