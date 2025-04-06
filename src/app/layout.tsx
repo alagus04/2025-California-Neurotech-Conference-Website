@@ -1,21 +1,16 @@
 import type { Metadata } from "next";
-import { Roboto, Outfit as Serif } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 import NavBar from "../../components/Nav";
 import Footer from "../../components/Footer";
 
-// Configure fonts
+// Configure Roboto font
 const roboto = Roboto({ 
   subsets: ["latin"], 
   weight: ["300", "400", "500", "700", "900"], 
   variable: "--font-roboto",
-  style: ["normal", "italic"]
-});
-
-const outfit = Serif({ 
-  subsets: ["latin"], 
-  weight: ["400", "500", "600", "700", "800", "900"], 
-  variable: "--font-outfit" 
+  style: ["normal", "italic"],
+  display: "swap"
 });
 
 export const metadata: Metadata = {
@@ -38,8 +33,8 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
-      <body className={`${roboto.variable} font-sans bg-[#f4f4f4] overscroll-none`}>
+    <html lang="en" className={`${roboto.variable} font-sans`}>
+      <body className="bg-[#f4f4f4] overscroll-none">
         <NavBar />
         {children}
         <Footer />
