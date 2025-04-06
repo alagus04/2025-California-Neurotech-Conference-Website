@@ -68,8 +68,116 @@ export default function Speakers() {
     }
   ];
 
+  const formerSpeakers = [
+    {
+      name: "Nathan Copeland",
+      image: "/Nathan_Copeland.jpg",
+      description: "Position",
+      tags: ["Keynote Speaker"],
+      year: "2024",
+      linkedin: "https://www.linkedin.com/in/nathan-copeland-a75606163/"
+    },
+    {
+      name: "David Eagleman",
+      image: "/David_Eagleman.png",
+      description: "Position",
+      tags: ["Keynote Speaker"],
+      year: "2024",
+      linkedin: "https://www.linkedin.com/in/davideagleman"
+    },
+    {
+      name: "Caitlin Ner",
+      image: "/Caitlin_Ner.png",
+      description: "Position",
+      tags: ["Industry"],
+      year: "2024",
+      linkedin: "https://es.linkedin.com/in/caitlinner"
+    },
+    {
+      name: "Chloe Duckworth",
+      image: "/Chloe_Duckworth.png",
+      description: "Position",
+      tags: ["Industry"],
+      year: "2024",
+      linkedin: "https://www.linkedin.com/in/chloe-duckworth"
+    },
+    {
+      name: "Gail Gannon",
+      image: "/Gail_Gannon.jpg",
+      description: "Position",
+      tags: ["Industry"],
+      year: "2024",
+      linkedin: "https://www.linkedin.com/in/gailgannon"
+    },
+    {
+      name: "Jonathon Schofield",
+      image: "/Jonathon_Schofield.jpg",
+      description: "Position",
+      tags: ["Industry"],
+      year: "2024",
+      linkedin: "https://www.linkedin.com/in/jonathon-schofield-06993253"
+    },
+    {
+      name: "Jose Munoz",
+      image: "/Jose_Munoz.jpg",
+      description: "Position",
+      tags: ["Industry"],
+      year: "2024",
+      linkedin: "https://es.linkedin.com/in/jmmunoz81"
+    },
+    {
+      name: "Julia Scott",
+      image: "/Julia_Scott.png",
+      description: "Position",
+      tags: ["Industry"],
+      year: "2024",
+      linkedin: "https://www.linkedin.com/in/julia-scott-phd"
+    },
+    {
+      name: "Karen Moxon",
+      image: "/Karen_Moxon.jpg",
+      description: "Position",
+      tags: ["Industry"],
+      year: "2024",
+      linkedin: "https://www.linkedin.com/in/karenmoxon"
+    },
+    {
+      name: "Lee Miller",
+      image: "/Lee_Miller.jpg",
+      description: "Position",
+      tags: ["Industry"],
+      year: "2024",
+      linkedin: "https://www.linkedin.com/in/lee-m-miller"
+    },
+    {
+      name: "Sergey Stavisky",
+      image: "/Sergey_Stavisky.jpg",
+      description: "Position",
+      tags: ["Industry"],
+      year: "2024",
+      linkedin: "https://www.linkedin.com/in/sergey-stavisky-2aab924"
+    },
+    {
+      name: "Sharena Rice",
+      image: "/Sharena_Rice.png",
+      description: "Position",
+      tags: ["Industry"],
+      year: "2024",
+      linkedin: "https://www.linkedin.com/in/sharenarice"
+    },
+    {
+      name: "Virginia de Sa",
+      image: "/Virginia_de_Sa.png",
+      description: "Position",
+      tags: ["Industry"],
+      year: "2024",
+      linkedin: "https://www.linkedin.com/in/virginia-de-sa-317378/"
+    }
+  ];
+
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-[#f2f6fe]">
+      {/* Hero Section */}
       <div className='opacity-90 w-full relative'>
         <Image
           src="/About.jpg"
@@ -78,15 +186,15 @@ export default function Speakers() {
           height={500}
           className="object-cover sm:h-[60vh] md:h-1/2 md:-mt-32 h-[70vh] w-full"
         />
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-xl sm:text-5xl md:text-7xl leading-loose top-1/4 left-1/2 transform -translate-x-1/2">
-        <h1 className="text-4xl font-bold sm:text-5xl md:text-7xl mb-14">Our Speakers</h1>
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-xl sm:text-5xl md:text-7xl leading-loose top-1/4 left-1/2 transform -translate-x-1/2">
+          <h1 className="text-4xl font-bold sm:text-5xl md:text-7xl mb-14">Our Speakers</h1>
           <p className='text-3xl md:w-[80%] text-center'>
             Explore the brilliant minds at CNTC, driving innovation in neurotechnology and neuroscience in academia and industry.
           </p>
         </div>
       </div>
 
-      {/* Keynote Speakers Section */}
+      {/* Keynote Speakers */}
       <div className="w-full px-4 mt-10">
         <h2 className="text-4xl font-bold text-center mb-8">Keynote Speakers</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -96,25 +204,17 @@ export default function Speakers() {
               className="flex flex-col items-center text-center bg-gradient-to-b from-white to-gray-50 rounded-2xl shadow-lg p-8 w-full transform hover:translate-y-[-5px] hover:shadow-xl transition-all duration-300 cursor-pointer relative group border border-gray-100"
               onClick={() => setSelectedSpeaker(speaker)}
             >
-              <div className="relative">
-                <Image
-                  src={speaker.image}
-                  alt={speaker.name}
-                  width={128}
-                  height={128}
-                  className="rounded-full w-48 h-48 object-cover mb-4 ring-4 ring-white shadow-lg"
-                />
-              </div>
+              <Image
+                src={speaker.image}
+                alt={speaker.name}
+                width={128}
+                height={128}
+                className="rounded-full w-48 h-48 object-cover mb-4 ring-4 ring-white shadow-lg"
+              />
               <h2 className="text-xl font-semibold text-gray-800 whitespace-nowrap">{speaker.name}</h2>
               <p className="text-sm text-gray-600 mb-4">{speaker.description}</p>
               <div className="flex-grow"></div>
-              <div 
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setSelectedSpeaker(speaker);
-                }}
-                className="transition-colors duration-300 cursor-pointer font-medium text-blue-600 hover:text-blue-700"
-              >
+              <div className="transition-colors duration-300 cursor-pointer font-medium text-blue-600 hover:text-blue-700">
                 Learn More
               </div>
             </div>
@@ -122,11 +222,12 @@ export default function Speakers() {
         </div>
       </div>
 
-      {/* Other Speakers Section */}
+      {/* Panelists */}
       <div className="w-full px-4 mt-16">
         <h2 className="text-4xl font-bold text-center mb-8">Panelists</h2>
-        {/* First Row - 4 Panelists */}
-        <div className="flex justify-center gap-8 mb-8">
+
+        {/* First Row */}
+        <div className="flex justify-center gap-8 mb-8 flex-wrap">
           {speakers.slice(2).map((speaker, index) => {
             const isAcademic = ["Dr. Gert Cauwenberghs", "Dr. Albert Rizzo", "Dr. Dugyu Kuzum"].includes(speaker.name);
             const isBottomRow = ["Dr. Arash Adami", "Ruthie Forney", "Dr. Dugyu Kuzum"].includes(speaker.name);
@@ -137,7 +238,6 @@ export default function Speakers() {
                 className="flex flex-col items-center text-center bg-gradient-to-b from-white to-gray-50 rounded-2xl shadow-lg p-8 w-72 h-[350px] md:h-[400px] transform hover:translate-y-[-5px] hover:shadow-xl transition-all duration-300 cursor-pointer relative group border border-gray-100"
                 onClick={() => setSelectedSpeaker(speaker)}
               >
-                {/* Floating Label */}
                 <div className="absolute top-4 right-4">
                   <div className={`px-3 py-1 rounded-full text-xs font-medium shadow-lg ${
                     isAcademic 
@@ -147,33 +247,26 @@ export default function Speakers() {
                     {isAcademic ? 'Academic' : 'Industry'}
                   </div>
                 </div>
-                <div className="relative">
-                  <Image
-                    src={speaker.image}
-                    alt={speaker.name}
-                    width={128}
-                    height={128}
-                    className="rounded-full w-48 h-48 object-cover mb-4 ring-4 ring-white shadow-lg"
-                  />
-                </div>
+                <Image
+                  src={speaker.image}
+                  alt={speaker.name}
+                  width={128}
+                  height={128}
+                  className="rounded-full w-48 h-48 object-cover mb-4 ring-4 ring-white shadow-lg"
+                />
                 <h2 className="text-xl font-semibold text-gray-800 whitespace-nowrap">{speaker.name}</h2>
                 <p className="text-sm text-gray-600 mb-4">{speaker.description}</p>
                 <div className="flex-grow"></div>
-                <div 
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setSelectedSpeaker(speaker);
-                  }}
-                  className="transition-colors duration-300 cursor-pointer font-medium text-blue-600 hover:text-blue-700"
-                >
+                <div className="transition-colors duration-300 cursor-pointer font-medium text-blue-600 hover:text-blue-700">
                   Learn More
                 </div>
               </div>
             );
           })}
         </div>
-        {/* Bottom Row - 3 Panelists */}
-        <div className="flex justify-center gap-8 mb-16">
+
+        {/* Bottom Row */}
+        <div className="flex justify-center gap-8 mb-16 flex-wrap">
           {speakers.slice(2).map((speaker, index) => {
             const isAcademic = ["Dr. Gert Cauwenberghs", "Dr. Albert Rizzo", "Dr. Dugyu Kuzum"].includes(speaker.name);
             const isBottomRow = ["Dr. Arash Adami", "Ruthie Forney", "Dr. Dugyu Kuzum"].includes(speaker.name);
@@ -184,7 +277,6 @@ export default function Speakers() {
                 className="flex flex-col items-center text-center bg-gradient-to-b from-white to-gray-50 rounded-2xl shadow-lg p-8 w-72 h-[350px] md:h-[400px] transform hover:translate-y-[-5px] hover:shadow-xl transition-all duration-300 cursor-pointer relative group border border-gray-100"
                 onClick={() => setSelectedSpeaker(speaker)}
               >
-                {/* Floating Label */}
                 <div className="absolute top-4 right-4">
                   <div className={`px-3 py-1 rounded-full text-xs font-medium shadow-lg ${
                     isAcademic 
@@ -194,25 +286,17 @@ export default function Speakers() {
                     {isAcademic ? 'Academic' : 'Industry'}
                   </div>
                 </div>
-                <div className="relative">
-                  <Image
-                    src={speaker.image}
-                    alt={speaker.name}
-                    width={128}
-                    height={128}
-                    className="rounded-full w-48 h-48 object-cover mb-4 ring-4 ring-white shadow-lg"
-                  />
-                </div>
+                <Image
+                  src={speaker.image}
+                  alt={speaker.name}
+                  width={128}
+                  height={128}
+                  className="rounded-full w-48 h-48 object-cover mb-4 ring-4 ring-white shadow-lg"
+                />
                 <h2 className="text-xl font-semibold text-gray-800 whitespace-nowrap">{speaker.name}</h2>
                 <p className="text-sm text-gray-600 mb-4">{speaker.description}</p>
                 <div className="flex-grow"></div>
-                <div 
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setSelectedSpeaker(speaker);
-                  }}
-                  className="transition-colors duration-300 cursor-pointer font-medium text-blue-600 hover:text-blue-700"
-                >
+                <div className="transition-colors duration-300 cursor-pointer font-medium text-blue-600 hover:text-blue-700">
                   Learn More
                 </div>
               </div>
@@ -221,18 +305,64 @@ export default function Speakers() {
         </div>
       </div>
 
-      {/* Popup Modal */}
+      {/* Divider */}
+      <hr className="w-3/4 mx-auto border-t-2 border-gray-300 my-20" />
+
+      {/* Former Speakers */}
+      <div className="w-full px-4 mb-20">
+      <h2 className="text-4xl font-bold text-center mb-8">Former Speakers</h2>
+      <div className="flex flex-wrap justify-center gap-6">
+        {formerSpeakers.map((speaker, index) => (
+          <a
+            key={index}
+            href={speaker.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300 rounded-2xl"
+          >
+            <div className="flex flex-col items-center text-center bg-gradient-to-b from-white to-gray-50 rounded-2xl shadow-md p-4 w-60 h-[250px] relative border border-gray-100">
+              <div className="absolute top-3 right-3 space-y-1">
+                {speaker.tags.map((tag, idx) => (
+                  <div
+                    key={idx}
+                    className={`px-2 py-1 rounded-full text-[0.7rem] font-medium shadow ${
+                      tag === 'Academic'
+                        ? 'bg-white text-purple-800 shadow-purple-200'
+                        : tag === 'Industry'
+                        ? 'bg-white text-blue-800 shadow-blue-200'
+                        : 'bg-white text-yellow-700 shadow-yellow-200'
+                    }`}
+                  >
+                    {tag}
+                  </div>
+                ))}
+              </div>
+              <Image
+                src={speaker.image}
+                alt={speaker.name}
+                width={96}
+                height={96}
+                className="rounded-full w-24 h-24 object-cover mb-3 ring-4 ring-white shadow-md"
+              />
+              <h2 className="text-md font-semibold text-gray-800">{speaker.name}</h2>
+              <p className="text-sm text-gray-600">{speaker.description}</p>
+              <p className="text-sm text-gray-500 mt-2">{speaker.year}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+
+      {/* Modal */}
       {selectedSpeaker && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="relative bg-white rounded-2xl p-6 md:p-10 shadow-lg w-11/12 md:w-1/2 lg:w-1/2 text-center">
-            {/* Close Button - Positioned at Top Right of Modal */}
             <button
               onClick={() => setSelectedSpeaker(null)}
               className="absolute top-4 right-4 text-2xl font-bold text-gray-600 hover:text-gray-900"
             >
               ✕
             </button>
-            
             <Image
               src={selectedSpeaker.image}
               alt={selectedSpeaker.name}
@@ -246,8 +376,6 @@ export default function Speakers() {
           </div>
         </div>
       )}
-
     </main>
   );
 }
-
