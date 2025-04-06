@@ -10,6 +10,7 @@ import ntechusc from '../../public/ntechusc.png'
 import angry from '../../public/angry.png'
 import home_1 from '../../public/home_1.png'
 import main from '../../public/main.jpg'
+import CarouselComponent from '../../components/Carousel'
 
 import biosensors from '../../public/biosensors.jpg'
 import postersesh from '../../public/postersesh.jpg'
@@ -40,10 +41,10 @@ export default function Home() {
         className="object-cover sm:h-[80vh] md:h-2/3 h-[70vh] w-full"
       />
       {/* Text Overlay */}
-      <div className="absolute inset-0 flex flex-col justify-start top-1/4 left-20 md:left-40 text-white text-xl md:text-7xl font-bold leading-loose">
-        <h1 className="sm:text-4xl md:text-4xl lg:text-6xl">2025 California</h1>
-        <h1 className="sm:text-4xl md:text-4xl lg:text-6xl">Neurotechnology</h1>
-        <h1 className="sm:text-4xl md:text-4xl lg:text-6xl">Conference</h1>
+      <div className="absolute inset-0 flex flex-col justify-start top-1/4 left-20 md:left-40 text-white text-2xl md:text-8xl font-bold leading-loose">
+        <h1 className="sm:text-5xl md:text-6xl lg:text-7xl">2025 California</h1>
+        <h1 className="sm:text-5xl md:text-6xl lg:text-7xl">Neurotechnology</h1>
+        <h1 className="sm:text-5xl md:text-6xl lg:text-7xl">Conference</h1>
         <div className='mt-4 md:mt-8'>
           <h2 className="sm:text-xl md:text-4xl">Saturday, April 26th, 2025</h2>
         </div>
@@ -74,6 +75,17 @@ export default function Home() {
   </div>
 </div>
 
+<div className="bg-[#062a74] w-full -mt-8">
+  <div className="flex flex-col items-center justify-center py-12">
+    <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white">Meet Our 2025 Speakers</h2>
+    <CarouselComponent />
+    <Link href="/speakers" className="mt-8">
+      <button className="bg-white text-[#062a74] px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+        Learn More
+      </button>
+    </Link>
+  </div>
+</div>
 
       <div className="flex flex-row items-center justify-center place-items-center pt-8">
         <span className="flex font-outfit text-2xl">

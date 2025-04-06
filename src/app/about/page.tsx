@@ -62,7 +62,7 @@ const Organizers = [
   },
   {
     name: "Lily Wu",
-    image: "Lily Wu.jpg",
+    image: "/Lily Wu.jpg",
     linkedin: "https://www.linkedin.com/in/lily-wu-0626b028b/"
   },
 

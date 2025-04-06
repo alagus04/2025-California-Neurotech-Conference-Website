@@ -61,7 +61,7 @@ export default function Speakers() {
       writeup: "Ruthie Forney is the Vice President of Product at Precision Neuroscience, where she leads product strategy and development to advance brain–computer interface (BCI) technology aimed at restoring connection and autonomy to people living with neurological conditions.\n\nWith over 15 years of experience in healthcare and health technology, Ruthie has built and scaled high-impact products at every stage—from early-stage startups to global tech giants. Before joining Precision, she was Senior Director of Product at Viz.ai, where she led the development of AI-powered care pathways in partnership with top pharmaceutical and medtech companies, and drove the life sciences product roadmap for regulatory-cleared algorithms and clinical workflow tools.\n\nPrior to that, at Amazon, Ruthie led the design and delivery of clinical service lines for Amazon Care, scaling virtual care offerings nationwide. She later held a strategic leadership role in Amazon Books, where she helped expand the Strategic Account Services program internationally into the Canadian marketplace.\n\nEarlier, Ruthie was an early team member at EverlyWell (now Everly Health), where she helped shape go-to-market strategy for lab testing products and led enterprise partnerships as the company scaled from pre–Series A to unicorn status.\n\nShe holds a Master's in Healthcare Administration and a Bachelor's in Social Work. Based in Seattle, Ruthie is passionate about building innovative, human-centered products that improve care access and health outcomes."
     },
     {
-      name: "Dugyu Kuzum",
+      name: "Dr. Dugyu Kuzum",
       image: "/kuzum.jpg",
       description: "Professor of Electrical and Computer Engineering @ UCSD",
       writeup: ""
@@ -105,14 +105,15 @@ export default function Speakers() {
                   className="rounded-full w-48 h-48 object-cover mb-4 ring-4 ring-white shadow-lg"
                 />
               </div>
-              <h2 className="text-xl font-semibold text-gray-800">{speaker.name}</h2>
+              <h2 className="text-xl font-semibold text-gray-800 whitespace-nowrap">{speaker.name}</h2>
               <p className="text-sm text-gray-600 mb-4">{speaker.description}</p>
+              <div className="flex-grow"></div>
               <div 
                 onClick={(e) => {
                   e.stopPropagation();
                   setSelectedSpeaker(speaker);
                 }}
-                className="text-blue-600 hover:text-blue-700 transition-colors duration-300 cursor-pointer font-medium"
+                className="transition-colors duration-300 cursor-pointer font-medium text-blue-600 hover:text-blue-700"
               >
                 Learn More
               </div>
@@ -127,8 +128,8 @@ export default function Speakers() {
         {/* First Row - 4 Panelists */}
         <div className="flex justify-center gap-8 mb-8">
           {speakers.slice(2).map((speaker, index) => {
-            const isAcademic = ["Dr. Gert Cauwenberghs", "Dr. Albert Rizzo", "Dugyu Kuzum"].includes(speaker.name);
-            const isBottomRow = ["Dr. Arash Adami", "Ruthie Forney", "Dugyu Kuzum"].includes(speaker.name);
+            const isAcademic = ["Dr. Gert Cauwenberghs", "Dr. Albert Rizzo", "Dr. Dugyu Kuzum"].includes(speaker.name);
+            const isBottomRow = ["Dr. Arash Adami", "Ruthie Forney", "Dr. Dugyu Kuzum"].includes(speaker.name);
             if (isBottomRow) return null;
             return (
               <div
@@ -155,16 +156,15 @@ export default function Speakers() {
                     className="rounded-full w-48 h-48 object-cover mb-4 ring-4 ring-white shadow-lg"
                   />
                 </div>
-                <h2 className="text-xl font-semibold text-gray-800">{speaker.name}</h2>
+                <h2 className="text-xl font-semibold text-gray-800 whitespace-nowrap">{speaker.name}</h2>
                 <p className="text-sm text-gray-600 mb-4">{speaker.description}</p>
+                <div className="flex-grow"></div>
                 <div 
                   onClick={(e) => {
                     e.stopPropagation();
                     setSelectedSpeaker(speaker);
                   }}
-                  className={`transition-colors duration-300 cursor-pointer font-medium text-blue-600 hover:text-blue-700 ${
-                    (speaker.name === "Dr. Erika Ross Ellison" || speaker.name === "Dr. Arash Adami") ? 'mt-5' : ''
-                  }`}
+                  className="transition-colors duration-300 cursor-pointer font-medium text-blue-600 hover:text-blue-700"
                 >
                   Learn More
                 </div>
@@ -175,8 +175,8 @@ export default function Speakers() {
         {/* Bottom Row - 3 Panelists */}
         <div className="flex justify-center gap-8 mb-16">
           {speakers.slice(2).map((speaker, index) => {
-            const isAcademic = ["Dr. Gert Cauwenberghs", "Dr. Albert Rizzo", "Dugyu Kuzum"].includes(speaker.name);
-            const isBottomRow = ["Dr. Arash Adami", "Ruthie Forney", "Dugyu Kuzum"].includes(speaker.name);
+            const isAcademic = ["Dr. Gert Cauwenberghs", "Dr. Albert Rizzo", "Dr. Dugyu Kuzum"].includes(speaker.name);
+            const isBottomRow = ["Dr. Arash Adami", "Ruthie Forney", "Dr. Dugyu Kuzum"].includes(speaker.name);
             if (!isBottomRow) return null;
             return (
               <div
@@ -203,16 +203,15 @@ export default function Speakers() {
                     className="rounded-full w-48 h-48 object-cover mb-4 ring-4 ring-white shadow-lg"
                   />
                 </div>
-                <h2 className="text-xl font-semibold text-gray-800">{speaker.name}</h2>
+                <h2 className="text-xl font-semibold text-gray-800 whitespace-nowrap">{speaker.name}</h2>
                 <p className="text-sm text-gray-600 mb-4">{speaker.description}</p>
+                <div className="flex-grow"></div>
                 <div 
                   onClick={(e) => {
                     e.stopPropagation();
                     setSelectedSpeaker(speaker);
                   }}
-                  className={`transition-colors duration-300 cursor-pointer font-medium text-blue-600 hover:text-blue-700 ${
-                    (speaker.name === "Dr. Erika Ross Ellison" || speaker.name === "Dr. Arash Adami") ? 'mt-5' : ''
-                  }`}
+                  className="transition-colors duration-300 cursor-pointer font-medium text-blue-600 hover:text-blue-700"
                 >
                   Learn More
                 </div>
