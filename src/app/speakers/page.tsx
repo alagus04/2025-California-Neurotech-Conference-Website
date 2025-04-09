@@ -86,9 +86,33 @@ export default function Speakers() {
       linkedin: "https://www.linkedin.com/in/davideagleman"
     },
     {
+      name: "Vikash Gilja",
+      image: "/Vikash_Gilja.png",
+      description: "UCSD",
+      tags: ["Keynote Speaker"],
+      year: "2023",
+      linkedin: "https://www.linkedin.com/in/davideagleman"
+    },
+    {
+      name: "Anne Andrews",
+      image: "/Anne_Andrews.png",
+      description: "UCLA",
+      tags: ["Keynote Speaker"],
+      year: "2023",
+      linkedin: "https://www.linkedin.com/in/davideagleman"
+    },
+    {
+      name: "Karen Moxon",
+      image: "/Karen_Moxon.jpg",
+      description: "UC Davis",
+      tags: ["Academic"],
+      year: "2023 (Keynote) & 2024 (Panelist)",
+      linkedin: "https://www.linkedin.com/in/karenmoxon"
+    },
+    {
       name: "Caitlin Ner",
       image: "/Caitlin_Ner.png",
-      description: "Position",
+      description: "PsyMed Ventures",
       tags: ["Industry"],
       year: "2024",
       linkedin: "https://es.linkedin.com/in/caitlinner"
@@ -96,7 +120,7 @@ export default function Speakers() {
     {
       name: "Chloe Duckworth",
       image: "/Chloe_Duckworth.png",
-      description: "Position",
+      description: "Valence AI",
       tags: ["Industry"],
       year: "2024",
       linkedin: "https://www.linkedin.com/in/chloe-duckworth"
@@ -104,7 +128,7 @@ export default function Speakers() {
     {
       name: "Gail Gannon",
       image: "/Gail_Gannon.jpg",
-      description: "Position",
+      description: "StartUp Health",
       tags: ["Industry"],
       year: "2024",
       linkedin: "https://www.linkedin.com/in/gailgannon"
@@ -112,15 +136,15 @@ export default function Speakers() {
     {
       name: "Jonathon Schofield",
       image: "/Jonathon_Schofield.jpg",
-      description: "Position",
-      tags: ["Industry"],
+      description: "UC Davis",
+      tags: ["Academic"],
       year: "2024",
       linkedin: "https://www.linkedin.com/in/jonathon-schofield-06993253"
     },
     {
       name: "Jose Munoz",
       image: "/Jose_Munoz.jpg",
-      description: "Position",
+      description: "Cerebralink Neurotech Consultancy",
       tags: ["Industry"],
       year: "2024",
       linkedin: "https://es.linkedin.com/in/jmmunoz81"
@@ -128,39 +152,31 @@ export default function Speakers() {
     {
       name: "Julia Scott",
       image: "/Julia_Scott.png",
-      description: "Position",
+      description: "Gambit Labs, SCU, XRSI",
       tags: ["Industry"],
       year: "2024",
       linkedin: "https://www.linkedin.com/in/julia-scott-phd"
     },
     {
-      name: "Karen Moxon",
-      image: "/Karen_Moxon.jpg",
-      description: "Position",
-      tags: ["Industry"],
-      year: "2024",
-      linkedin: "https://www.linkedin.com/in/karenmoxon"
-    },
-    {
       name: "Lee Miller",
       image: "/Lee_Miller.jpg",
-      description: "Position",
-      tags: ["Industry"],
+      description: "UC Davis",
+      tags: ["Academic"],
       year: "2024",
       linkedin: "https://www.linkedin.com/in/lee-m-miller"
     },
     {
       name: "Sergey Stavisky",
       image: "/Sergey_Stavisky.jpg",
-      description: "Position",
-      tags: ["Industry"],
+      description: "UC Davis",
+      tags: ["Academic"],
       year: "2024",
       linkedin: "https://www.linkedin.com/in/sergey-stavisky-2aab924"
     },
     {
       name: "Sharena Rice",
       image: "/Sharena_Rice.png",
-      description: "Position",
+      description: "Sanmai",
       tags: ["Industry"],
       year: "2024",
       linkedin: "https://www.linkedin.com/in/sharenarice"
@@ -168,11 +184,83 @@ export default function Speakers() {
     {
       name: "Virginia de Sa",
       image: "/Virginia_de_Sa.png",
-      description: "Position",
-      tags: ["Industry"],
+      description: "UCSD",
+      tags: ["Academic"],
       year: "2024",
       linkedin: "https://www.linkedin.com/in/virginia-de-sa-317378/"
-    }
+    },
+    {
+      name: "Katrin Mayr",
+      image: "/Katrin_Mayr.jpeg",
+      description: "G.Tec",
+      tags: ["Industry"],
+      year: "2023",
+      linkedin: "https://at.linkedin.com/in/mayrkatrin"
+    },
+    {
+      name: "Daril Brown",
+      image: "/Daril_Brown.png",
+      description: "UC Davis",
+      tags: ["Academic"],
+      year: "2023",
+      linkedin: "https://www.linkedin.com/in/daril-brown"
+    },
+    {
+      name: "Ryan Field",
+      image: "/Ryan_Field.png",
+      description: "Kernel",
+      tags: ["Industry"],
+      year: "2023",
+      linkedin: "https://www.linkedin.com/in/ryanmfield/"
+    },
+    {
+      name: "Greg Kubin",
+      image: "/Greg_Kubin.png",
+      description: "PsyMed Ventures",
+      tags: ["Industry"],
+      year: "2023",
+      linkedin: "https://www.linkedin.com/in/gregorykubin"
+    },
+    {
+      name: "Aadeel Akhtar",
+      image: "/Aadeel_Akhtar.png",
+      description: "PSYONIC",
+      tags: ["Industry"],
+      year: "2023",
+      linkedin: "https://www.linkedin.com/in/aadeelakhtar"
+    },
+    {
+      name: "Nick Halper",
+      image: "/Nick_Halper.png",
+      description: "Neuromatch",
+      tags: ["Industry"],
+      year: "2023",
+      linkedin: "https://www.linkedin.com/in/nickhalper"
+    },
+    {
+      name: "Raphael Certain",
+      image: "/Raphael_Certain.jpeg",
+      description: "Clarity",
+      tags: ["Industry"],
+      year: "2023",
+      linkedin: "https://www.linkedin.com/in/raphael-certain"
+    },
+    {
+      name: "Walt Baxter",
+      image: "/Walt_Baxter.png",
+      description: "Medtronic",
+      tags: ["Industry"],
+      year: "2023",
+      linkedin: "https://www.linkedin.com/in/walt-baxter-7932761"
+    },
+    {
+      name: "William Speier",
+      image: "/William_Speier.jpeg",
+      description: "UCLA",
+      tags: ["Academic"],
+      year: "2023",
+      linkedin: "https://www.linkedin.com/in/wspeier"
+    },
   ];
 
   return (
@@ -310,7 +398,7 @@ export default function Speakers() {
 
       {/* Former Speakers */}
       <div className="w-full px-4 mb-20">
-      <h2 className="text-4xl font-bold text-center mb-8">Former Speakers</h2>
+      <h2 className="text-4xl font-bold text-center mb-8">Previous Speakers</h2>
       <div className="flex flex-wrap justify-center gap-6">
         {formerSpeakers.map((speaker, index) => (
           <a
