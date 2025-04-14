@@ -34,13 +34,13 @@ export default function Speakers() {
       name: "Dr. Erika Ross Ellison",
       image: "/Erika.jpeg",
       description: "President of IEEE EMBS",
-      writeup: ""
+      writeup: "With deep expertise in neuroscience and medical device innovation, Dr. Erika Ross Ellison brings over a decade of experience at the intersection of clinical research, regulatory strategy, and neurotechnology development. She is the Vice President of Global Clinical, Regulatory, and Quality at ONWARD Medical, where she leads efforts to advance neuromodulation therapies designed to restore function and mobility for individuals with spinal cord injuries.\n\nDr. Ellison currently serves as the President of the IEEE Engineering in Medicine and Biology Society (EMBS), where she supports global collaboration and mentorship within the biomedical engineering community. Her previous roles include Director of Clinical & Applied Research at Abbott Neuromodulation and Neuroscience Director at Cala Health. With a PhD in neuroscience from the Mayo Clinic, her research background includes pioneering work in deep brain stimulation for Parkinson's and Alzheimer's disease."
     },
     {
       name: "Dr. Albert Rizzo",
       image: "/Albert_Rizzo.jpg",
       description: "Research Professor of Psychiatry & Behavioural Sciences @ USC",
-      writeup: ""
+      writeup: "Dr. Albert 'Skip' Rizzo is Director for Medical Virtual Reality at the USC Institute for Creative Technologies and a Research Professor at both the USC Davis School of Gerontology and the Keck School of Medicine's Department of Psychiatry and Behavioral Sciences. A clinical psychologist by training, Rizzo leads groundbreaking work in the development and evaluation of virtual reality (VR) systems for clinical assessment, rehabilitation, and resilience training.\n\nHis research spans cognitive, psychological, and motor domains, including VR-based exposure therapy for PTSD—work that earned him the American Psychological Association's 2010 Award for Outstanding Contributions to the Treatment of Trauma. Rizzo also develops VR applications for cognitive training, physical rehabilitation after stroke or brain injury, and AI-driven virtual patients for clinical training. His current projects include VR scenarios for social and vocational skill-building in autism and emotional coping skills for military resilience.\n\nHe serves as Senior Editor of Presence: Teleoperators and Virtual Environments (MIT Press) and sits on several editorial boards in cognitive and tech-focused psychology. He is also the founder of the Virtual Reality Mental Health Email Listserve (VRPSYCH)."
     },
     {
       name: "JoJo Platt",
@@ -61,10 +61,10 @@ export default function Speakers() {
       writeup: "Ruthie Forney is the Vice President of Product at Precision Neuroscience, where she leads product strategy and development to advance brain–computer interface (BCI) technology aimed at restoring connection and autonomy to people living with neurological conditions.\n\nWith over 15 years of experience in healthcare and health technology, Ruthie has built and scaled high-impact products at every stage—from early-stage startups to global tech giants. Before joining Precision, she was Senior Director of Product at Viz.ai, where she led the development of AI-powered care pathways in partnership with top pharmaceutical and medtech companies, and drove the life sciences product roadmap for regulatory-cleared algorithms and clinical workflow tools.\n\nPrior to that, at Amazon, Ruthie led the design and delivery of clinical service lines for Amazon Care, scaling virtual care offerings nationwide. She later held a strategic leadership role in Amazon Books, where she helped expand the Strategic Account Services program internationally into the Canadian marketplace.\n\nEarlier, Ruthie was an early team member at EverlyWell (now Everly Health), where she helped shape go-to-market strategy for lab testing products and led enterprise partnerships as the company scaled from pre–Series A to unicorn status.\n\nShe holds a Master's in Healthcare Administration and a Bachelor's in Social Work. Based in Seattle, Ruthie is passionate about building innovative, human-centered products that improve care access and health outcomes."
     },
     {
-      name: "Dr. Dugyu Kuzum",
+      name: "Dr. Duygu Kuzum",
       image: "/kuzum.jpg",
       description: "Professor of Electrical and Computer Engineering @ UCSD",
-      writeup: ""
+      writeup: "Dr. Duygu Kuzum is a Professor of Electrical and Computer Engineering at UC San Diego, where she holds the Joan and Irwin Jacobs-Kavli Foundation Chancellor Endowed Faculty Fellowship for Engineering the Brain and the Mind II. Her research lies at the intersection of nanoelectronics and neuroscience, focusing on the development of neural interfaces and nanoelectronic devices for brain-inspired computing. She has pioneered synaptic devices that mimic brain plasticity and is developing advanced tools for high-precision brain circuit analysis, including transparent probes and dissolvable electrodes.\n\nDr. Kuzum received her Ph.D. in Electrical Engineering from Stanford University and completed a postdoctoral fellowship in Bioengineering at the University of Pennsylvania. She has authored over 40 publications and her work has been featured in Nano Letters, Nature, and various media outlets. Her honors include the MIT Technology Review's Innovators Under 35 (TR35), the PopTech Science and Public Leaders Fellowship, and the Penn Neuroscience Pilot Innovative Research Award."
     }
   ];
 
@@ -128,8 +128,8 @@ export default function Speakers() {
         {/* First Row - 4 Panelists */}
         <div className="flex justify-center gap-8 mb-8">
           {speakers.slice(2).map((speaker, index) => {
-            const isAcademic = ["Dr. Gert Cauwenberghs", "Dr. Albert Rizzo", "Dr. Dugyu Kuzum"].includes(speaker.name);
-            const isBottomRow = ["Dr. Arash Adami", "Ruthie Forney", "Dr. Dugyu Kuzum"].includes(speaker.name);
+            const isAcademic = ["Dr. Gert Cauwenberghs", "Dr. Albert Rizzo", "Dr. Duygu Kuzum"].includes(speaker.name);
+            const isBottomRow = ["Dr. Arash Adami", "Ruthie Forney", "Dr. Duygu Kuzum"].includes(speaker.name);
             if (isBottomRow) return null;
             return (
               <div
@@ -175,8 +175,8 @@ export default function Speakers() {
         {/* Bottom Row - 3 Panelists */}
         <div className="flex justify-center gap-8 mb-16">
           {speakers.slice(2).map((speaker, index) => {
-            const isAcademic = ["Dr. Gert Cauwenberghs", "Dr. Albert Rizzo", "Dr. Dugyu Kuzum"].includes(speaker.name);
-            const isBottomRow = ["Dr. Arash Adami", "Ruthie Forney", "Dr. Dugyu Kuzum"].includes(speaker.name);
+            const isAcademic = ["Dr. Gert Cauwenberghs", "Dr. Albert Rizzo", "Dr. Duygu Kuzum"].includes(speaker.name);
+            const isBottomRow = ["Dr. Arash Adami", "Ruthie Forney", "Dr. Duygu Kuzum"].includes(speaker.name);
             if (!isBottomRow) return null;
             return (
               <div
