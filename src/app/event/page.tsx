@@ -102,7 +102,7 @@ export default function ConferenceSchedule() {
 
         {/* Schedule List */}
         <div className="flex flex-col justify-center items-center px-4 sm:px-6 mb-12">
-          <div className="bg-gradient-to-r from-blue-50 via-white to-blue-50 w-full md:w-4/5 shadow-xl rounded-2xl p-6 sm:p-8 border border-gray-200">
+          <div className="bg-white w-full md:w-4/5 shadow-xl rounded-2xl p-6 sm:p-8 border border-gray-200">
             <div className="flex justify-start mb-6">
               <button
                 onClick={() => setUseLocalTime(!useLocalTime)}
