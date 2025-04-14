@@ -101,14 +101,14 @@ export default function ConferenceSchedule() {
         </div>
 
         {/* Schedule List */}
-        <div className="flex flex-col justify-center items-center px-2">
-          <div className="bg-white w-full md:w-4/5 shadow-xl rounded-xl p-4">
-            <div className="flex justify-start mb-4">
+        <div className="flex flex-col justify-center items-center px-4 sm:px-6 mb-12">
+          <div className="bg-gradient-to-r from-blue-50 via-white to-blue-50 w-full md:w-4/5 shadow-xl rounded-2xl p-6 sm:p-8 border border-gray-200">
+            <div className="flex justify-start mb-6">
               <button
                 onClick={() => setUseLocalTime(!useLocalTime)}
-                className="px-4 py-2 bg-white text-[#1d82bb] rounded-lg shadow-md hover:bg-gray-100 transition duration-300 flex items-center gap-2"
+                className="px-4 py-2 bg-white text-[#062a74] rounded-lg shadow-md hover:bg-gray-50 transition duration-300 flex items-center gap-2 border border-gray-200"
               >
-                <FontAwesomeIcon icon={faClock} className="text-[#1d82bb]" />
+                <FontAwesomeIcon icon={faClock} className="text-[#062a74]" />
                 <span>{useLocalTime ? `View in PST (Conference Time)` : `View in ${timezone} (Your Time)`}</span>
               </button>
             </div>
@@ -178,16 +178,19 @@ export default function ConferenceSchedule() {
               }
             ].map(({ times, events }, index) => (
               <React.Fragment key={index}>
-                <div className="grid grid-cols-[0.8fr_2fr] gap-6 py-6">
-                  <div className="flex items-start justify-end pr-2">
-                    <FontAwesomeIcon icon={faClock} className="mr-2 text-[#1d82bb] mt-1 text-xl" />
-                    <span className="font-semibold text-[#1d82bb] text-xl">{convertTime(times)}</span>
+                <div className="grid grid-cols-[0.8fr_2fr] gap-6 py-6 hover:bg-blue-50/50 rounded-xl transition-colors duration-200">
+                  <div className="flex items-start justify-end pr-4">
+                    <FontAwesomeIcon icon={faClock} className="text-[#062a74] mr-2 mt-1 text-xl" />
+                    <span className="font-semibold text-[#062a74] text-xl">{convertTime(times)}</span>
                   </div>
                   <div className="pl-4">
                     {events.map(({ event, location }, eventIndex) => (
                       <div key={eventIndex} className={eventIndex > 0 ? "mt-8" : ""}>
-                        <div className="font-bold text-2xl text-gray-800">{event}</div>
-                        <div className="text-gray-600 text-base italic mt-1">📍 {location}</div>
+                        <div className="font-bold text-2xl text-gray-800 hover:text-[#062a74] transition-colors duration-200">{event}</div>
+                        <div className="text-gray-600 text-base italic mt-2 flex items-center gap-2">
+                          <span>📍</span>
+                          <span>{location}</span>
+                        </div>
                       </div>
                     ))}
                   </div>
