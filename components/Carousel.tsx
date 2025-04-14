@@ -22,7 +22,7 @@ export default function CarouselComponent() {
     { image: JoJo_Platt, name: "JoJo Platt", description: "US Partnerships Lead @ Corundrum Neuroscience" },
     { image: Arash_Adami, name: "Dr. Arash Adami", description: "Founder and CEO @ Alpha Fiber" },
     { image: Ruthie, name: "Ruthie Forney", description: "VP of Products @ Precision Neuroscience" },
-    { image: Kuzum, name: "Dr. Dugyu Kuzum", description: "Professor of Electrical and Computer Engineering @ UCSD" }
+    { image: Kuzum, name: "Dr. Duygu Kuzum", description: "Professor of Electrical and Computer Engineering @ UCSD" }
   ];
 
   return (
