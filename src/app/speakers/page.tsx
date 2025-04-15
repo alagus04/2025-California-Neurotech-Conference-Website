@@ -72,7 +72,7 @@ export default function Speakers() {
     {
       name: "Nathan Copeland",
       image: "/Nathan_Copeland.jpg",
-      description: "Position",
+      description: "BCI Can Do Better LLC",
       tags: ["Keynote Speaker"],
       year: "2024",
       linkedin: "https://www.linkedin.com/in/nathan-copeland-a75606163/"
@@ -80,7 +80,7 @@ export default function Speakers() {
     {
       name: "David Eagleman",
       image: "/David_Eagleman.png",
-      description: "Position",
+      description: "Neosensory, Center for Science and Law, iHeartMedia, Stanford",
       tags: ["Keynote Speaker"],
       year: "2024",
       linkedin: "https://www.linkedin.com/in/davideagleman"
